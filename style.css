@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    max-width: 1440px;
+    
+    
+}
+
+.container{
+    display: flex;
+    width: 1080px;
+    height:446px ;
+}
+
+.content{
+    background-color: hsl(244, 38%, 16%);
+    color:  hsl(0, 0%, 100%);
+    padding: 73px 0px 30px 70px;
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+
+  
+}
+
+.content>h1{
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+.content>p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+}
+
+.infos{
+    display: flex;
+}
+
+
+.info{
+    margin-right: 50px;
+}
+
+.info>h2{
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.info>p{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.image{
+    background: url(/images/image-header-desktop.jpg) no-repeat ;
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+}
+
+.filter{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 64%, 61%, 0.418);
+    border-radius: 0 10px 10px 0;
+}
+
+.attribution {
+    text-align: center; 
+    color: white;
+    margin: 20px;
+    align-self:end;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width:375px){
+
+    body{
+        max-width: 375px;
+        margin-top: 0px;
+        margin-right: 0;
+    }
+    
+    .container{
+        flex-direction:column-reverse ;
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    .content{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .image{
+        background: url(/images/image-header-mobile.jpg) ;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .filter{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .infos{
+        flex-direction: column;
+    }
+
+    .info{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    br{
+        display: none;
+    }
+
+    .content>h1{
+        font-size: 1.5em;
+        margin: 30px auto 0px auto;
+    }
+
+    .content>p{
+        margin: 30px;
+    }
+
+    .attribution{
+        font-size: 12px;
+        margin: 10px 0 10px 0;
+    
+    }
+
+
+
+}
